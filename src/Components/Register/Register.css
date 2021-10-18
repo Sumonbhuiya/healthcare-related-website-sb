@@ -1,0 +1,17 @@
+.back-image{
+    background-image: url(https://i.ibb.co/JtmJnWM/young-doctor-gesturing-with-fingers-white-coat-hat-gloves-176474-8832.jpg);
+    height: 100%;
+    background-size: cover;
+}
+.control-form img{
+    display: block;
+    margin: auto;
+    height: 170px;
+}
+.control-input{
+    width: 50%;
+    margin: auto;
+}
+.login-ancor{
+    text-decoration: none;
+}

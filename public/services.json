@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Dr.Bino Tumnus",
+        "education": "M.B.B.S",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor3-1.jpg",
+        "category": "primary",
+        "expert": "diabetes, high blood pressure, and high cholesterol",
+        "day": "Saturday, Monday, Wednesday",
+        "description": "Dr.Bino Tumnus is a very good primary care doctor.control over the healthcare system of the private sector. This chapter highlights the roles and responsibilities of the public-sector authorities and the service-delivery systems in the provision and promotion of healthcare in the country."
+    },
+    {
+        "id": 2,
+        "name": "Dr.Ankita Prim",
+        "education": "M.B.B.S, pH.D",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor2-1.jpg",
+        "category": "primary",
+        "expert": "headache, cough, and sore throat",
+        "day": "Sunday, Monday, Thursday",
+        "description": "Dr. Ankita Prim The concept of primary health care has been repeatedly reinterpreted and redefined. In some contexts, it has referred to the provision of ambulatory or first-level of personal health care services. In other contexts, primary health care has been understood as a set of priority health interventions for low-income populations (also called selective primary health care)."
+    },
+    {
+        "id": 3,
+        "name": "Dr.Quintina",
+        "education": "M.B.B.S, pH.D General",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor7.jpg",
+        "category": "primary",
+        "expert": "physicals, mild cuts, scrapes, or burns",
+        "day": "Friday, Tuesday, Thursday",
+        "description": "Dr. Quintina Primary health care, Oral rehydration therapy, Sanitation, Nutrition. Role and Activities: Creating awareness going door to door, Immediate refer system, Home visit of pregnant women, Normal delivery conduct. In Union Level: Family welfare center (FWC), Community clinic, Union sub-center, Rural dispensary."
+    },
+    {
+        "id": 4,
+        "name": "Dr.Charl Marks",
+        "education": "M.B.B.S, pH.D General",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor4-1.jpg",
+        "category": "Sexual",
+        "expert": "gonorrhea, chlamydia, and HIV, HPV and hepatitis B",
+        "day": "Friday, Monday, Thursday",
+        "description": "Dr. Charl Marks is a world class pulmonologist having experience more than 30 years of medical treatments in Bangladesh and foreign country like IRAN. He started his career helping Bangladesh for patients with common and rare chest diseases in NIDCH (The most specialized health institution for chest related problems)."
+    },
+    {
+        "id": 5,
+        "name": "Dr.Daniel Craig",
+        "education": "M.B.B.S, pH.D Laboratory",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor5-2.jpg",
+        "category": "Sexual",
+        "expert": "erectile dysfunction and premature ejaculation",
+        "day": "Sunday, Monday, Tuesday",
+        "description": "Dr. Daniel Craig An Australian court has charged doctor Shafiul Milky, a general practitioner, with rape and sexual assaults of female patients under the guise of performing necessary medical procedures, ABC News . He started his career helping Bangladesh for patients with common and rare chest diseases in NIDCH (The most specialized health institution for chest related problems)."
+    },
+    {
+        "id": 6,
+        "name": "Dr.Sohel Reza",
+        "education": "M.B.B.S, FCPS, MS",
+        "img": "https://th.bing.com/th/id/R.86331d9f4f72bdb1579f875e700671ca?rik=kbfqGCqQ1S%2b93g&pid=ImgRaw&r=0",
+        "category": "Sexual",
+        "expert": "cervical cancer, breast cancer, and prostate cancer",
+        "day": "Saturday, Friday, Tuesday",
+        "description": "Dr. Sohel Reza An Australian court has charged doctor Shafiul Milky,  We only provide information about those doctors and clinics who are registered and created profile with us a general practitioner, with rape and sexual assaults of female patients under the guise of performing necessary medical procedures."
+    },
+    {
+        "id": 7,
+        "name": "Dr.Anagha Menen",
+        "education": "M.B.B.S, FCPS",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor1.jpg",
+        "category": "Mental",
+        "expert": "evaluation and diagnosis of mental health conditions",
+        "day": "Saturday, Friday, Tuesday",
+        "description": "Dr. Anagha Menen have good communication skills, ability to respond with empathy and confidentiality, and are very important to us because they work directly with the Rohingya”, adds Dr Rumana Rafiq. Mental health training is one of the key ways to help health care workers understand how to address mental health needs in emergency."
+    },
+    {
+        "id": 8,
+        "name": "Dr.Ankitha Prem",
+        "education": "pH.D, FCPS",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor2-1.jpg",
+        "category": "Mental",
+        "expert": "individual, group, or family counseling",
+        "day": "Friday, Sunday, Tuesday",
+        "description": "Dr. Ankitha Prem is a world class pulmonologist having experience more than 30 years of medical treatments in Bangladesh and foreign country like IRAN. He started his career helping Bangladesh for patients with common and rare chest diseases in NIDCH (The most specialized health institution for chest related problems)."
+    },
+    {
+        "id": 9,
+        "name": "Dr.Bora Tumnus",
+        "education": "pH.D Orthodontist, FCPS",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/doctor3-1.jpg",
+        "category": "Mental",
+        "expert": "help with creating a support network, returning to the workforce, or learning daily skills",
+        "day": "Monday, Wednesday, Tuesday",
+        "description": "Dr. Bora Tumnus from Arizona State University explores current issues in management and behavioral care in integrated primary care environments. The DBH degree’s management concentration can help you develop the tools, training and experience to pursue leadership roles in health care administration and keep pace with new trends."
+    },
+    {
+        "id": 10,
+        "name": "Dr.Thomas",
+        "education": "pH.D Orthodontist, MD",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/08/img-caption1.jpg",
+        "category": "Dental",
+        "expert": "Dental cleaning, Polishing, Filling, Gum care, Flossing, Oral hygiene",
+        "day": "Monday, Wednesday, Tuesday",
+        "description": "Dr. Thomas A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education."
+    },
+    {
+        "id": 11,
+        "name": "Dr.Kira",
+        "education": "M.B.B.S, MD",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/08/img-caption2.jpg",
+        "category": "Dental",
+        "expert": "Root canal treatment, Braces, Implants, Bridges, Crown, Dentures",
+        "day": "Friday, Wednesday, Thursday",
+        "description": "Dr. Kira An endodontist is the dental specialist concerned with the causes, diagnosis, prevention, and treatment of diseases and injuries of the human dental pulp or the nerve of the tooth."
+    },
+    {
+        "id": 12,
+        "name": "Dr.Fiza Rahman",
+        "education": "M.B.B.S",
+        "img": "https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2015/08/img-caption3.jpg",
+        "category": "Dental",
+        "expert": "Missing teeth, Bridges, Tooth bonding, Porcelain veneers, Invisalign, Inlays & Onlays",
+        "day": "Saturday, Monday, Thursday",
+        "description": "Dr. Fiza Rahman and the staff at About Dental Care provide quality dental care to patients in the St. George area, focusing on a comprehensive approach to oral health. By treating and educating patients, our team helps patients to stay healthy in between visits."
+    }
+]

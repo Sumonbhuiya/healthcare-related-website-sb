@@ -1,0 +1,12 @@
+.image-setup{
+    height: 400px;
+}
+.shadow-hover:hover{
+    box-shadow: 5px 5px 10px rgb(141, 141, 141);
+}
+
+@media (max-width: 576px) {
+    .image-setup{
+        height: 200px;
+    }
+}
