@@ -35,6 +35,7 @@ function App() {
             </Route>
             <Route path="/services">
               <Services></Services>
+              <PrimaryServices></PrimaryServices>
             </Route>
             <PrivateRoute path="/service/:serviceId">
               <Service></Service>
@@ -73,7 +74,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route exact path="/*">
+            <Route exact path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
