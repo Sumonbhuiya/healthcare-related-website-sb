@@ -4,6 +4,7 @@ import useAmbulance from '../../../Hooks/useAmbulance';
 import AmbulanceService from '../AmbulanceService/AmbulanceService';
 
 const AmbulanceServices = () => {
+    // load ambulance data from hooks
     const [ambulance] = useAmbulance();
 
     return (
@@ -19,6 +20,7 @@ const AmbulanceServices = () => {
                         }
 
                     </Col>
+                    {/* ambulance service another card */}
                     <Col md={12} className="pb-3">
                         <Row className="pb-4">
                             <Col xs lg={12} md sm={12} className="align-items-center">

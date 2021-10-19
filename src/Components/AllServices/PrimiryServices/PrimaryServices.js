@@ -4,6 +4,7 @@ import useData from '../../../Hooks/useData';
 import PrimaryService from '../PrimaryService/PrimaryService';
 
 const PrimaryServices = () => {
+    // load data from json 
     const [services] = useData();
 
     const service = services.filter(service => (service.category === 'primary'));

@@ -4,10 +4,12 @@ import { Card, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const MentalService = (props) => {
+    // load information from json 
     const { id, name, img, education, day, expert, description, category } = props.service;
     return (
         <div>
             <Col>
+                {/* show data using card */}
                 <Card className="shadow-hover" style={{ height: "680px" }}>
                     <Card.Img className="p-4 rounded" style={{ height: "280px" }} variant="top" src={img} />
                     <Card.Body className="px-4">

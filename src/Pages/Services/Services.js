@@ -4,10 +4,12 @@ import Navbar from '../../Components/Navbar/Navbar';
 const Services = () => {
     return (
         <div>
+            {/* service header  */}
             <div className="p-3 bg-secondary">
                 <h1 className="text-dark">MEET <span className="text-primary">OTHER DOCTORS</span> <br /></h1>
                 <p className="text-white">Discover better health & wellness by using our doctor ratings & reviews to make your choice.</p>
             </div>
+            {/* call components  */}
             <Navbar></Navbar>
         </div>
     );

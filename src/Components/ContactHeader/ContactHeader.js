@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const ContactHeader = () => {
+    // contact us header banner 
     return (
         <>
             <div className="bg-light">

@@ -2,8 +2,10 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const Feedback = () => {
+    // home page feedback section 
     return (
         <div className=" bg-light mt-3 p-4">
+            {/* feedback heading  */}
             <div className=" w-75 mx-auto">
                 <h1 className="text-dark">PATIENTS <span className="text-primary">SAYS ABOUT US</span> <br /></h1>
                 <p className="text-muted fs-5">Our promise is a quality-driven service, and our aim is to ensure affordable access to healthcare services</p>

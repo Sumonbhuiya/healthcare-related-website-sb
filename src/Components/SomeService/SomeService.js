@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './SomeService.css'
 
 const SomeService = (props) => {
+    // for home page service data
     const { id, name, img, education, day, description, category } = props.service;
     return (
         <div>

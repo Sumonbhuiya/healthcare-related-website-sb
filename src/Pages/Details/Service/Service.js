@@ -5,9 +5,10 @@ import useData from '../../../Hooks/useData';
 import OrderDetails from '../OrderDetails/OrderDetails';
 
 const Service = () => {
+    // call specific data 
     const { serviceId } = useParams();
     const [services] = useData();
-
+    //  filter specific data 
     const serviceDetails = services.filter(service => (service.id === parseInt(serviceId)));
     return (
         <div>

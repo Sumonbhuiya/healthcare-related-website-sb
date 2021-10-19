@@ -6,8 +6,10 @@ import useData from '../../Hooks/useData';
 import SomeService from '../SomeService/SomeService';
 
 const SomeServices = () => {
+    // load data from json for home page 
     const [services] = useData();
 
+    // find specific data from json 
     const service = services.filter(service => (service.id === 1) || (service.id === 4) || (service.id === 7) || (service.id === 10));
 
     return (
@@ -24,6 +26,7 @@ const SomeServices = () => {
                     </SomeService>)
                 }
             </Row>
+            {/* all services button  */}
             <Button className="bg-danger rounded-pill me-5 px-5 py-2"><Link className="text-white text-decoration-none" to="/services">See All Services</Link></Button>
         </div>
     );

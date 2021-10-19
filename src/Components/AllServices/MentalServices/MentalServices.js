@@ -4,6 +4,7 @@ import useData from '../../../Hooks/useData';
 import MentalService from '../MentalService/MentalService';
 
 const MentalServices = () => {
+    // load data from json 
     const [services] = useData();
 
     const service = services.filter(service => (service.category === 'Mental'));

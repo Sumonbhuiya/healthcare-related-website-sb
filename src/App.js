@@ -17,10 +17,12 @@ import Contact from './Pages/Contact/Contact';
 import Ambulance from './Pages/Ambulance/Ambulance';
 import NotFound from './Components/NotFound/NotFound';
 import AmbulanceDetails from './Pages/DetailsAmbulance/AmbulanceDetails/AmbulanceDetails';
+import Appointment from './Pages/Appointment/Appointment';
 
 function App() {
   return (
     <div className="App">
+      {/* call all pages and take them specific route */}
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
@@ -36,6 +38,9 @@ function App() {
             </Route>
             <PrivateRoute path="/service/:serviceId">
               <Service></Service>
+            </PrivateRoute>
+            <PrivateRoute path="/appointment">
+              <Appointment></Appointment>
             </PrivateRoute>
             <Route path="/primary">
               <Services></Services>

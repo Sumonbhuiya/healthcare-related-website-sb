@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+    // services page navbar 
     return (
         <div className="bg-light">
             <nav className="py-4">

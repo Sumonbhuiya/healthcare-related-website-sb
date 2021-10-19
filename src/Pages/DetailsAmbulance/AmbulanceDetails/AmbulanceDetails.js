@@ -6,12 +6,15 @@ import useAmbulance from '../../../Hooks/useAmbulance';
 import AmbulanceDetail from '../AmbulanceDetail/AmbulanceDetail';
 
 const AmbulanceDetails = () => {
+    // load specific data 
     const { ambulancedetailsId } = useParams();
     const [ambulance] = useAmbulance();
 
+    // filter fron json 
     const serviceDetails = ambulance.filter(service => (service.id === parseInt(ambulancedetailsId)));
     return (
         <div>
+            {/* header  */}
             <div className="p-3 bg-secondary">
                 <h2 className="text-white">DETAILS ABOUT AMBULANCE SERVICES<br /></h2>
                 <p className="text-white fst-italic fs-5">See details about specific service!</p>

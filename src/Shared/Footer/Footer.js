@@ -2,9 +2,11 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const Footer = () => {
+    // footer section 
     return (
         <div className="bg-dark">
             <Container>
+                {/* footer first row */}
                 <Row lg={2} xs md sm={1} className="align-items-center pt-5">
                     <Col lg={4} sm={12} className="">
                         <Card.Body className="p-4">
@@ -56,6 +58,7 @@ const Footer = () => {
                         </Row>
                     </Col>
                 </Row >
+                {/* footer second row  */}
                 <Row lg={2} xs md sm={1} className="align-items-center py-3">
                     <Col lg={4} sm={12} className="">
                         <Card.Body className="py-4">

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 const Slider = () => {
+    // home page carousel 
     return (
         <>
             <Carousel>
@@ -12,9 +13,8 @@ const Slider = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h1 className="text-dark">Make Your <span className="text-danger">Dental</span> <br />Experience A Lot Brighter</h1>
-                        <p className="text-dark">With best facilities and better equipments, you are in safe hands.</p>
-                        <Button className="px-5" variant="secondary">Stay With Us</Button>
+                        <h2 className="text-dark">Make Your <span className="text-danger">Dental</span> <br />Experience A Lot Brighter</h2>
+                        <p className="text-dark fw-light">With best facilities and better equipments!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -25,9 +25,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h1 className="text-dark">From Simple <span className="text-success">Procedures</span> <br />You Can Be Stay Healthy</h1>
-                        <p className="text-dark">With best facilities and better equipments, you are in safe hands.</p>
-                        <Button className="px-5" variant="secondary">Stay With Us</Button>
+                        <h2 className="text-dark">From Simple <span className="text-success">Procedures</span> <br />You Can Be Stay Healthy</h2>
+                        <p className="text-dark">You are in safe hands...</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

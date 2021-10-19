@@ -6,6 +6,7 @@ const AmbulanceDetail = (props) => {
     return (
         <>
             <Col lg={8}>
+                {/* ambulance and driver information */}
                 <Row xs lg={2} md sm={1} className="align-items-center py-2">
                     <Col lg={4} md sm={12}>
                         <Card.Img className="rounded w-75 pb-2" src={d_img} />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Row, Table } from 'react-bootstrap';
 
 const Banner = () => {
+    // home page banner 
     return (
         <div className=" bg-light">
             <Container>

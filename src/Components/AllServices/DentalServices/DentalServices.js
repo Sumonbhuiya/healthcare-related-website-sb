@@ -4,6 +4,7 @@ import useData from '../../../Hooks/useData';
 import DentalService from '../DentalService/DentalService';
 
 const DentalServices = () => {
+    // load data from hooks
     const [services] = useData();
 
     const service = services.filter(service => (service.category === 'Dental'));

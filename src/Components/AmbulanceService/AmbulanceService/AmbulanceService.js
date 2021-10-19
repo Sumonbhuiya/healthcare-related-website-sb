@@ -3,13 +3,15 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const AmbulanceService = (props) => {
+    // load information from json 
     const { id, from, price, date, time, a_img } = props.service;
     return (
         <div>
+            {/* ambulance card */}
             <Card className="p-4">
                 <Row>
                     <Col xs lg={4} md sm={3}>
-                        <Card.Img className="rounded-circle" style={{ height: "100px" }} src={a_img} />
+                        <Card.Img className="rounded" style={{ height: "100px" }} src={a_img} />
                     </Col>
                     <Col xs lg={6} md sm={7} className="align-items-center">
                         <Card.Title className="text-start text-primary">{from}</Card.Title>

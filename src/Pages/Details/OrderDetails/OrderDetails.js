@@ -3,6 +3,7 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const OrderDetails = (props) => {
+    // load information for servic details page 
     const { name, education, img, category, expert, day, description } = props.service
     return (
         <>
@@ -22,10 +23,11 @@ const OrderDetails = (props) => {
                     </Col>
                 </Row>
             </Col>
+            {/* button  */}
             <Col lg={4} sm={12} className="align-items-center">
                 <Card.Body className="p-4">
                     <Card.Title className="fs-5 text-primary">8 Slots Available</Card.Title>
-                    <Button className="bg-primary rounded px-2 py-2"><Link className="text-white text-decoration-none" to="/">Book Appointment</Link></Button>
+                    <Button className="bg-primary rounded px-2 py-2"><Link className="text-white text-decoration-none" to="/appointment"><i className="far fa-calendar-check"></i> Book Appointment</Link></Button>
                 </Card.Body>
             </Col>
         </>

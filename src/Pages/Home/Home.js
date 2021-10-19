@@ -7,6 +7,7 @@ import Feedback from '../../Components/Feedback/Feedback';
 const Home = () => {
     return (
         <div>
+            {/* call components  */}
             <Slider></Slider>
             <Banner></Banner>
             <SomeServices></SomeServices>

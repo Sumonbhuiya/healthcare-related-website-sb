@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const ContactInfo = () => {
+    // contact us footer banner 
     return (
         <div className="bg-info bg-gradient">
             <Container className=" pt-5">
