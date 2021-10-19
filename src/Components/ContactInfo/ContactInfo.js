@@ -45,7 +45,7 @@ const ContactInfo = () => {
                 </Row>
                 <hr />
             </Container>
-            <div className="pb-4">
+            <div className="pb-4 px-3">
                 <h1 className="text-white">You are always <span className="fw-bold">important for us</span> <br /></h1>
                 <p className="text-white fst-italic fs-5">Those who think they have no time for exercise will sooner or later have to find time for illness</p>
             </div>

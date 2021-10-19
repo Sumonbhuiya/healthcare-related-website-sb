@@ -14,6 +14,9 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import Service from './Pages/Details/Service/Service';
 import Contact from './Pages/Contact/Contact';
+import Ambulance from './Pages/Ambulance/Ambulance';
+import NotFound from './Components/NotFound/NotFound';
+import AmbulanceDetails from './Pages/DetailsAmbulance/AmbulanceDetails/AmbulanceDetails';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+            <PrivateRoute path="/service/:serviceId">
+              <Service></Service>
+            </PrivateRoute>
             <Route path="/primary">
               <Services></Services>
               <PrimaryServices></PrimaryServices>
@@ -47,8 +53,11 @@ function App() {
               <Services></Services>
               <DentalServices></DentalServices>
             </Route>
-            <PrivateRoute path="/service/:serviceId">
-              <Service></Service>
+            <PrivateRoute path="/ambulance">
+              <Ambulance></Ambulance>
+            </PrivateRoute>
+            <PrivateRoute path="/ambulancedetails/:ambulancedetailsId">
+              <AmbulanceDetails></AmbulanceDetails>
             </PrivateRoute>
             <PrivateRoute path="/contact">
               <Contact></Contact>
@@ -58,6 +67,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
