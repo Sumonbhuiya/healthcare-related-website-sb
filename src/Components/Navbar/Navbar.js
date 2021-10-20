@@ -5,7 +5,8 @@ const Navbar = () => {
     // services page navbar 
     return (
         <div className="bg-light">
-            <nav className="py-4">
+            <p className="pt-2 text-danger fw-bold">Our Affordable Services</p>
+            <nav className="pb-4">
                 <NavLink activeStyle={{
                     fontWeight: "bold",
                     color: "orange"

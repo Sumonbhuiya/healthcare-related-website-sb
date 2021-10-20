@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home"><span className="fs-2 fw-bold">Family Care</span></Navbar.Brand>
+                    <Nav.Link as={Link} to="/home"><Image src="http://myfamilycheck.com/images/logo.png" style={{ width: '150px' }} /> </Nav.Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

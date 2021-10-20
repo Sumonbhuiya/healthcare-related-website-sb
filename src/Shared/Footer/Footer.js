@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Nav, Row } from 'react-bootstrap';
 
 const Footer = () => {
     // footer section 
@@ -10,8 +10,16 @@ const Footer = () => {
                 <Row lg={2} xs md sm={1} className="align-items-center pt-5">
                     <Col lg={4} sm={12} className="">
                         <Card.Body className="p-4">
-                            <Card.Title className="fs-4 text-white">FAMILY CARE</Card.Title>
+                            <Card.Img variant="top" className="w-75" src="http://myfamilycheck.com/images/logo.png" />
                         </Card.Body>
+                        <Container>
+                            <Nav className="mx-auto w-75">
+                                <Nav.Link href="https://www.facebook.com/"><i className="fab fa-facebook-square fs-3"></i></Nav.Link>
+                                <Nav.Link href="https://twitter.com/Twitch"><i className="fab fa-twitter-square fs-3"></i></Nav.Link>
+                                <Nav.Link href="https://www.youtube.com/"><i className="fab fa-youtube-square fs-3" ></i></Nav.Link>
+                                <Nav.Link href="https://www.linkedin.com/feed/"><i className="fab fa-linkedin fs-3"></i></Nav.Link>
+                            </Nav>
+                        </Container>
                     </Col>
                     <Col lg={8}>
                         <Row lg={2} xs md sm={2} className="align-items-center py-2">
@@ -20,17 +28,20 @@ const Footer = () => {
                                     <Col xs lg={4} md sm={3}>
                                     </Col>
                                     <Col xs lg={8} md sm={9} className="align-items-center">
-                                        <Card.Text className="text-start text-white">
-                                            About Our Hospital
+                                        <Card.Text className="text-start text-white fs-4">
+                                            Our services
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
+                                        <Card.Text className="text-start text-muted">
+                                            About Our Clinic
+                                        </Card.Text>
+                                        <Card.Text className="text-start text-muted">
                                             Read Our Blogs
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
+                                        <Card.Text className="text-start text-muted">
                                             About Us
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
-                                            About Your Comment
+                                        <Card.Text className="text-start text-muted">
+                                            Read FAQs
                                         </Card.Text>
                                     </Col>
                                 </Row>
@@ -40,17 +51,17 @@ const Footer = () => {
                                     <Col xs lg={4} md sm={3}>
                                     </Col>
                                     <Col xs lg={8} md sm={9}>
-                                        <Card.Text className="text-start text-white">
-                                            Get Help
+                                        <Card.Text className="text-start text-white fs-4">
+                                            Out Contact
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
-                                            Read FAQs
+                                        <Card.Text className="text-start text-muted">
+                                            <i className="fas fa-phone-alt"></i> +880 1784 784333
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
-                                            View All  Dr.
+                                        <Card.Text className="text-start text-muted">
+                                            <i className="fas fa-envelope"></i> familycheck@support.com
                                         </Card.Text>
-                                        <Card.Text className="text-start text-white">
-                                            Give Feedback
+                                        <Card.Text className="text-start text-muted">
+                                            <i className="fas fa-map-marker-alt"></i> Farmgate Panthopot Road, Dhaka-1215
                                         </Card.Text>
                                     </Col>
                                 </Row>
