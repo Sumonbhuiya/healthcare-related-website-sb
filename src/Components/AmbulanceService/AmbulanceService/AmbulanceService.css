@@ -1,0 +1,6 @@
+.ambulance-hover:hover{
+    transform: scale(1.03);
+}
+.text-decoration:hover{
+    transform: scaleX(1.03);
+}

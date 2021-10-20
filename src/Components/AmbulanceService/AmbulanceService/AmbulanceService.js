@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './AmbulanceService.css'
 
 const AmbulanceService = (props) => {
     // load information from json 
     const { id, from, price, date, time, a_img } = props.service;
     return (
-        <div>
+        <div className="ambulance-hover">
             {/* ambulance card */}
             <Card className="p-4">
                 <Row>
@@ -16,17 +17,17 @@ const AmbulanceService = (props) => {
                     <Col xs lg={6} md sm={7} className="align-items-center">
                         <Card.Title className="text-start text-primary">{from}</Card.Title>
                         <Card.Text className="text-start text-muted"><span className="text-dark">Cost: </span>
-                            {price}
+                            {price} <i className="far fa-money-bill-alt text-success"></i>
                         </Card.Text>
                         <Row lg={1} xs md sm={1} className="align-items-center">
                             <Col lg={6} sm={6}>
                                 <Card.Text className="text-start text-muted">
-                                    <i className="far fa-calendar"></i> {date}
+                                    <i className="far fa-calendar text-warning"></i> {date}
                                 </Card.Text>
                             </Col>
                             <Col lg={6} sm={6}>
                                 <Card.Text className="text-start text-muted">
-                                    <i className="far fa-clock"></i> {time}
+                                    <i className="far fa-clock text-warning"></i> {time}
                                 </Card.Text>
                             </Col>
                         </Row>

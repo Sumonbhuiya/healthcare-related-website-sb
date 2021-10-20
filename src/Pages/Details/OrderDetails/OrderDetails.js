@@ -17,7 +17,7 @@ const OrderDetails = (props) => {
                         <Card.Text className="text-start text-muted">
                             <Col className="text-primary"><span className="text-dark fw-bold">Specialist on: </span>{category} Care</Col>
                             <Col className="text-primary"><span className="text-dark fw-bold">About: </span>{expert} Care</Col>
-                            <Col className="text-primary"><span className="text-dark fw-bold">Available on: </span>{day}</Col>
+                            <Col className="text-primary"><span className="text-dark fw-bold">Available on: </span><i className="fas fa-calendar-check text-warning"></i> {day}</Col>
                             <Col className="text-muted"><span className="text-dark fw-bold">More Information About {name}: </span>{description}</Col>
                         </Card.Text>
                     </Col>
@@ -27,7 +27,7 @@ const OrderDetails = (props) => {
             <Col lg={4} sm={12} className="align-items-center">
                 <Card.Body className="p-4">
                     <Card.Title className="fs-5 text-primary">8 Slots Available</Card.Title>
-                    <Button className="bg-primary rounded px-2 py-2"><Link className="text-white text-decoration-none" to="/appointment"><i className="far fa-calendar-check"></i> Book Appointment</Link></Button>
+                    <Button className="bg-primary rounded px-2 py-2"><Link className="text-white text-decoration-none" to="/appointment"><i className="far fa-calendar-plus text-danger fs-5"></i> Book Appointment</Link></Button>
                 </Card.Body>
             </Col>
         </>

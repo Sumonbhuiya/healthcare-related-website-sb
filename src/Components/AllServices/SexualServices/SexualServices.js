@@ -11,7 +11,7 @@ const SexualServices = () => {
 
     return (
         <div>
-            <Row xs md={1} lg={3} className="g-3 w-75 mx-auto py-4">
+            <Row xs md={1} lg={3} className="g-3 w-75 mx-auto py-5">
                 {
                     service.map(service => <SexcualService
                         key={service.id}

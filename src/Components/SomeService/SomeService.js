@@ -10,18 +10,21 @@ const SomeService = (props) => {
         <div>
             <Col>
                 <Card className="shadow-hover">
-                    <Card.Img className="p-4 rounded image-setup" variant="top" src={img} />
-                    <Card.Body className="px-4">
-                        <Card.Title className="fs-4">{name} <small className="fs-6">({education})</small></Card.Title>
+                    <div className="card-photo">
+                        <Card.Img className="p-4 rounded image-setup" variant="top" src={img} />
+                        <Card.Body className="px-4 pt-0">
+                            <Card.Title className="fs-4 name">{name} <small className="fs-6">({education})</small></Card.Title>
+                        </Card.Body>
+                    </div>
+                    <div className="card-details">
                         <Card.Text>
-                            <Col className="text-primary">{category} Care</Col>
+                            <Col className="text-primary category">{category} Care</Col>
                         </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                        <ListGroupItem className="text-primary"><span className="text-dark fw-bold">Availabel on:</span> {day}</ListGroupItem>
-                        <ListGroupItem className="text-muted">{description.slice(0, 100)}</ListGroupItem>
-                    </ListGroup>
-                    <Button className="w-100 bg-dark"><Link className="text-white text-decoration-none" to={`/service/${id}`}>View Details</Link></Button>
+                        <Card.Text>
+                            <Col className="details">{description.slice(0, 100)}...</Col>
+                        </Card.Text>
+                        <Button className="handel-button px-4 py-2"><Link className="text-white text-decoration-none" to={`/service/${id}`}>View Details</Link></Button>
+                    </div>
                 </Card>
             </Col>
         </div>

@@ -30,7 +30,7 @@ const AmbulanceDetails = () => {
                 </Row>
             </Container>
             <div className="pb-5">
-                <Button className="bg-secondary rounded-pill px-4 py-2"><Link className="text-white text-decoration-none" to="/ambulance"><i className="fas fa-arrow-left"></i> Go Back</Link></Button>
+                <Button className="bg-secondary rounded-pill px-4 py-2"><Link className="text-white text-decoration-none" to="/ambulance"><i className="fas fa-arrow-left text-primary"></i> Go Back</Link></Button>
             </div>
         </div>
     );

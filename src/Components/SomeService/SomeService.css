@@ -1,12 +1,59 @@
 .image-setup{
     height: 400px;
 }
+.category{
+    font-size: 18px;
+    font-weight: 700;
+}
+.details{
+    padding: 0 25px;
+    font-size: 18px;
+    color: white;
+}
+.handel-button{
+    border-top-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border: 0;
+    background-color: black;
+}
+.handel-button:hover{
+    background-color: rgb(126, 118, 118);
+}
 .shadow-hover:hover{
     box-shadow: 5px 5px 10px rgb(141, 141, 141);
+    transform: scale(1.05);
+}
+.card-photo{
+    position: relative;
+}
+.card-details{
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding-top: 100px;
+}
+.shadow-hover:hover .card-details{
+    display: block;
+    overflow: hidden;
+    background-color: rgba(218, 214, 214, 0.5);
+}
+.shadow-hover:hover .name{
+    display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 360px) {
     .image-setup{
         height: 200px;
+        width: 100%;
+    }
+    .shadow-hover{
+        width: 100%;
+    }
+}
+@media (min-width: 361px) and(max-width: 576) {
+    .image-setup{
+        height: 240px;
+        width: 100%;
     }
 }

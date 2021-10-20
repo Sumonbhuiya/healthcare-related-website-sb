@@ -49,13 +49,11 @@ const Banner = () => {
                                 <Card.Title className="fs-4 text-white">OPENING HOURS</Card.Title>
                             </Card.Body>
                             <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th className="text-white">Day</th>
-                                        <th className="text-white">Time</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
+                                    <tr>
+                                        <td className="text-white">Day</td>
+                                        <td className="text-white">Time</td>
+                                    </tr>
                                     <tr>
                                         <td className="text-white">Saturday – Wednesday</td>
                                         <td className="text-white">08:00 – 20:00</td>
