@@ -55,13 +55,13 @@ const Footer = () => {
                                             Out Contact
                                         </Card.Text>
                                         <Card.Text className="text-start text-muted">
-                                            <i className="fas fa-phone-alt"></i> +880 1784 784333
+                                            <i className="fas fa-phone-alt text-primary "></i> +880 1784 784333
                                         </Card.Text>
                                         <Card.Text className="text-start text-muted">
-                                            <i className="fas fa-envelope"></i> familycheck@support.com
+                                            <i className="fas fa-envelope text-primary "></i> familycheck@support.com
                                         </Card.Text>
                                         <Card.Text className="text-start text-muted">
-                                            <i className="fas fa-map-marker-alt"></i> Farmgate Panthopot Road, Dhaka-1215
+                                            <i className="fas fa-map-marker-alt text-primary "></i> Farmgate Panthopot Road, Dhaka-1215
                                         </Card.Text>
                                     </Col>
                                 </Row>
@@ -73,7 +73,7 @@ const Footer = () => {
                 <Row lg={2} xs md sm={1} className="align-items-center py-3">
                     <Col lg={4} sm={12} className="">
                         <Card.Body className="py-4">
-                            <Card.Text className="text-white">Copyright © 2021 Health Care | SumonBhuiya</Card.Text>
+                            <Card.Text className="text-white">Copyright <i className="far fa-copyright text-primary"></i> 2021 Health Care | SumonBhuiya</Card.Text>
                         </Card.Body>
                     </Col>
                     <Col lg={8}>

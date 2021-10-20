@@ -19,7 +19,7 @@ const SomeServices = () => {
                 <h1 className="text-dark">Our Distinguished <span className="text-primary">Specialists</span> <br /></h1>
                 <p>A smile is  a curve that sets everything straight!</p>
             </div>
-            <Row xs md={1} lg={2} className="g-5 handel-large handel-large pt-4 pb-5">
+            <Row xs={1} md={1} lg={2} className="g-5 handel-large pt-4 pb-5">
                 {
                     service.map(service => <SomeService
                         key={service.id}

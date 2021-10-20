@@ -23,7 +23,7 @@ const MentalService = (props) => {
                         <ListGroupItem className="text-muted"><span className="text-dark fw-bold">Expart on:</span> {expert}</ListGroupItem>
 
                     </ListGroup>
-                    <Button className="w-100 bg-dark"><Link className="text-white text-decoration-none" to={`/service/${id}`}>View Details</Link></Button>
+                    <Button className="w-100 bg-dark"><Link className="text-white text-decoration-none" to={`/service/${id}`}><i className="text-warning far fa-eye"></i> View Details</Link></Button>
                 </Card>
             </Col>
         </div>

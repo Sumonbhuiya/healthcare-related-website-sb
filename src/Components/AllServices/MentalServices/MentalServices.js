@@ -11,7 +11,7 @@ const MentalServices = () => {
 
     return (
         <div>
-            <Row xs md={1} lg={3} className="g-3 w-75 mx-auto py-5">
+            <Row xs={1} md={2} lg={3} className="g-3 handel-large py-5">
                 {
                     service.map(service => <MentalService
                         key={service.id}
