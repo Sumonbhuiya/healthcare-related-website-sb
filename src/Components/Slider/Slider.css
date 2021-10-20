@@ -1,0 +1,11 @@
+
+@media (max-width: 380px) {
+    .slider-text{
+        font-size: 15px;
+    }
+    .slider-p{
+        font-size: 13px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

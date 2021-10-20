@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import './Slider.css'
 
 const Slider = () => {
     // home page carousel 
@@ -13,8 +14,8 @@ const Slider = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h2 className="text-dark">Make Your <span className="text-danger">Dental</span> <br />Experience A Lot Brighter</h2>
-                        <p className="text-dark fw-light">With best facilities and better equipments!</p>
+                        <h2 className="text-dark slider-text">Make Your <span className="text-danger">Dental</span> <br />Experience A Lot Brighter</h2>
+                        <p className="text-dark fw-light slider-p">With best facilities & better equipments!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -25,8 +26,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h2 className="text-dark">From Simple <span className="text-success">Procedures</span> <br />You Can Be Stay Healthy</h2>
-                        <p className="text-dark">You are in safe hands...</p>
+                        <h2 className="text-dark slider-text">From Simple <span className="text-success">Procedures</span> <br />You Can Be Stay Healthy</h2>
+                        <p className="text-dark slider-p">You are in safe hands...</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
