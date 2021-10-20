@@ -1,6 +1,7 @@
 .image-setup{
     height: 400px;
 }
+/* card body design  */
 .category{
     font-size: 18px;
     font-weight: 700;
@@ -16,6 +17,7 @@
     border: 0;
     background-color: black;
 }
+/* hover design  */
 .handel-button:hover{
     background-color: rgb(126, 118, 118);
 }
@@ -42,6 +44,7 @@
     display: none;
 }
 
+/* screen purpas  */
 @media (max-width: 360px) {
     .image-setup{
         height: 200px;

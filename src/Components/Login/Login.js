@@ -31,7 +31,6 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log(user);
                 history.push(redirect_url);
                 setError('');
             })

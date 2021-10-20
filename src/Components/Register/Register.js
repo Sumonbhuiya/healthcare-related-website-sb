@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, getAuth, updateProfile } from 'firebase/auth';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import initializeAuthenticatin from '../Firebase/Firebase.init';
 import './Register.css'
 
@@ -13,20 +13,17 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/home';
+
     // registration form 
     const handelRegistration = event => {
         event.preventDefault();
 
-        createNewUser(email, password);
-    }
-
-
-    // registration process 
-    const createNewUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
-            .then(userCredential => {
-                const randomUser = userCredential.user;
-                console.log(randomUser);
+            .then(() => {
+                history.push(redirect_url);
                 setError('');
                 setNewProfile();
             })
