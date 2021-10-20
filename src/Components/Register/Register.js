@@ -1,54 +1,48 @@
-import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, updateProfile } from '@firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, updateProfile } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import initializeAuthenticatin from '../Firebase/Firebase.init';
 import './Register.css'
 
+initializeAuthenticatin();
+const auth = getAuth();
 
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const auth = getAuth();
 
     // registration form 
     const handelRegistration = event => {
         event.preventDefault();
-        // check password formate 
-        if (!/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/) {
-            setError('Password must be 8 characters (2 uppercase letter, 1 special charecter, 2 number, 3 lowercase letter).');
-            return;
-        }
+
+        createNewUser(email, password);
     }
 
 
     // registration process 
-    createUserWithEmailAndPassword(auth, email, password)
-        .then(userResult => {
-            const randomUser = userResult.user;
-            console.log(randomUser);
-            setError('');
-            // call set name function 
-            setUserName();
-            // call verify email function 
-            verifyEmail();
-        })
-        .catch(error => {
-            setError(error.message);
-        })
-
-    // set user name 
-    const setUserName = () => {
-        updateProfile(auth.currentUser, { displayName: name })
-            .then(result => { })
+    const createNewUser = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(userCredential => {
+                const randomUser = userCredential.user;
+                console.log(randomUser);
+                setError('');
+                setNewProfile();
+            })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
-    // verify user email 
-    const verifyEmail = () => {
-        sendEmailVerification(auth.currentUser)
-            .then(result => {
-                console.log(result);
-            })
+    const setNewProfile = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name
+        }).then(() => {
+
+        }).catch((error) => {
+            setError(error.message);
+        });
     }
 
     // input sections 
@@ -69,7 +63,7 @@ const Register = () => {
                 <br /><br />
                 <form className="row g-3" onSubmit={handelRegistration}>
                     <div className="col-12">
-                        <input onBlur={handelNameChange} type="text" className="form-control control-input" id="inputAddress" placeholder="Name" required />
+                        <input onChange={handelNameChange} type="text" className="form-control control-input" id="inputAddress" placeholder="Name" required />
                     </div>
                     <div className="col-12">
                         <input onBlur={handelEmail} type="email" className="form-control control-input" id="inputAddress" placeholder="Email" required />

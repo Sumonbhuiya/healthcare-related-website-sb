@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home">Family Care</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home"><span className="fs-2 fw-bold">Family Care</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -21,17 +21,17 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             {/* chack user  */}
-                            {user?.email ?
+                            {user.uid || user.email ?
                                 <Nav>
                                     <Navbar.Text>
-                                        |{user?.displayName}|
+                                        |{user.displayName}|
                                     </Navbar.Text>
-                                    <Nav.Link onClick={logOut} as={Link} to="/home">log Out</Nav.Link>
+                                    <Nav.Link onClick={logOut} as={Link} to="/home"><span className="text-danger">log Out</span></Nav.Link>
                                 </Nav>
                                 :
                                 <Nav>
-                                    <Nav.Link as={Link} to="/login">log in</Nav.Link>
-                                    <Nav.Link eventKey={2} as={Link} to="/register">Registration</Nav.Link>
+                                    <Nav.Link as={Link} to="/login"><span className="text-danger fw-bold fs-5">login</span></Nav.Link>
+                                    <Nav.Link eventKey={2} as={Link} to="/register"><span className="text-danger fw-bold fs-5">Registration</span></Nav.Link>
                                 </Nav>
                             }
                         </Nav>

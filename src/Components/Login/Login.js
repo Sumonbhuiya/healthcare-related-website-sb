@@ -2,11 +2,16 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import initializeAuthenticatin from '../Firebase/Firebase.init';
+
+initializeAuthenticatin();
+const auth = getAuth();
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const auth = getAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -20,24 +25,30 @@ const Login = () => {
     }
 
     // user login form 
-    const processLogin = (email, password) => {
-        const user = auth.currentUser;
-        if (user !== null) {
+    const processLogin = event => {
+        event.preventDefault();
 
-            signInWithEmailAndPassword(auth, email, password)
-                .then(userResult => {
-                    const randomUser = userResult.user;
-                    console.log(randomUser);
-                    // set error empty 
-                    setError('');
-                })
-                // error message 
-                .catch(error => {
-                    setError(error.message);
-                })
-        }
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log(user);
+                history.push(redirect_url);
+                setError('');
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
     }
 
+    // input sections 
+
+    const handelEmail = event => {
+        setEmail(event.target.value);
+    }
+
+    const handelPassword = event => {
+        setPassword(event.target.value);
+    }
 
 
     return (
@@ -46,10 +57,10 @@ const Login = () => {
                 <br /><br />
                 <form className="row g-3" onSubmit={processLogin}>
                     <div className="col-12">
-                        <input type="email" className="form-control control-input" id="inputAddress" placeholder="Email" required />
+                        <input onChange={handelEmail} type="email" className="form-control control-input" id="inputAddress" placeholder="Email" required />
                     </div>
                     <div className="col-12">
-                        <input type="password" className="form-control control-input" id="inputAddress" placeholder="Password" required />
+                        <input onChange={handelPassword} type="password" className="form-control control-input" id="inputAddress" placeholder="Password" required />
                     </div>
                     <div className="row mb-3 text-danger">{error}</div>
                     <div className="col-12">
@@ -57,7 +68,7 @@ const Login = () => {
                     </div>
                 </form>
                 <div className="col-12 p-4 text-center">
-                    <button onClick={handelGoogleLogIn} className="btn btn-warning">Google Sign In</button>
+                    <button onClick={handelGoogleLogIn} className="btn btn-warning"><i className="fab fa-google fs-4 pe-2 pt-1 text-white"></i> Google Sign In</button>
                 </div>
                 <p className="text-danger control-input p-3">New user? please <Link className="login-ancor" to="/register">Registration</Link></p>
                 <br /><br /><br /><br />
