@@ -15,10 +15,10 @@ const Feedback = () => {
                     <Col md={12} className="pb-3">
                         <Card className="p-4" style={{ boxShadow: '3px 3px 6px rgb(141, 141, 141)' }}>
                             <Row>
-                                <Col xs lg={3} md sm={3}>
+                                <Col xs lg={3} md={3} sm={3}>
                                     <Card.Img className="rounded-circle w-75" src="https://inmedical.sdemo.site/wp-content/uploads/2017/01/inmedical_doctor_2-1-150x150.jpg" />
                                 </Col>
-                                <Col xs lg={9} md sm={9} className="align-items-center">
+                                <Col xs lg={9} md={9} sm={9} className="align-items-center">
                                     <Card.Title className="text-start">David Sunders</Card.Title>
                                     <Card.Text className="text-start text-muted">
                                         to: Director Manager
@@ -37,10 +37,10 @@ const Feedback = () => {
                     <Col md={12} className="pb-3">
                         <Card className="p-4" style={{ boxShadow: '3px 3px 6px rgb(141, 141, 141)' }}>
                             <Row>
-                                <Col xs lg={3} md sm={3}>
+                                <Col xs lg={3} md={3} sm={3}>
                                     <Card.Img className="rounded-circle w-75" src="https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/testimonial1-1.jpg" />
                                 </Col>
-                                <Col xs lg={9} md sm={9} className="align-items-center">
+                                <Col xs lg={9} md={9} sm={9} className="align-items-center">
                                     <Card.Title className="text-start">Emma Watson</Card.Title>
                                     <Card.Text className="text-start text-muted">
                                         to: Director Manager
