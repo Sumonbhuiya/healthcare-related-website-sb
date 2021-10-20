@@ -21,13 +21,13 @@ const Footer = () => {
                             </Nav>
                         </Container>
                     </Col>
-                    <Col lg={8}>
-                        <Row lg={2} xs md sm={2} className="align-items-center py-2">
-                            <Col sm={6}>
+                    <Col lg={8} sm={12}>
+                        <Row lg={2} xs={1} md sm={1} className="align-items-center py-2">
+                            <Col sm={12}>
                                 <Row className="pb-4">
-                                    <Col xs lg={4} md sm={3}>
+                                    <Col xs={3} lg={4} md sm={3}>
                                     </Col>
-                                    <Col xs lg={8} md sm={9} className="align-items-center">
+                                    <Col xs={9} lg={8} md sm={9} className="align-items-center">
                                         <Card.Text className="text-start text-white fs-4">
                                             Our services
                                         </Card.Text>
@@ -46,11 +46,11 @@ const Footer = () => {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col sm={6}>
+                            <Col sm={12}>
                                 <Row className="pb-4">
-                                    <Col xs lg={4} md sm={3}>
+                                    <Col xs={2} lg={4} md sm={3}>
                                     </Col>
-                                    <Col xs lg={8} md sm={9}>
+                                    <Col xs={10} lg={8} md sm={9}>
                                         <Card.Text className="text-start text-white fs-4">
                                             Out Contact
                                         </Card.Text>
@@ -77,7 +77,7 @@ const Footer = () => {
                         </Card.Body>
                     </Col>
                     <Col lg={8}>
-                        <Row lg={2} xs md sm={2} className="align-items-center py-2">
+                        <Row lg={2} xs={2} md sm={2} className="align-items-center py-2">
                             <Col sm={6}>
                                 <Row className="pb-4">
                                     <Col xs lg={4} md sm={3}>

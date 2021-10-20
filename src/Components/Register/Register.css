@@ -15,3 +15,8 @@
 .login-ancor{
     text-decoration: none;
 }
+@media (max-width: 576px) {
+    .control-input{
+        width: 100%;
+    }
+}

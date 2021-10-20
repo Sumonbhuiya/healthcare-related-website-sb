@@ -16,10 +16,10 @@ const Banner = () => {
                                     </Col>
                                 </Row>
                                 <Row className="pb-4">
-                                    <Col xs lg={3} md sm={3}>
+                                    <Col xs={4} lg={3} md sm={3}>
                                         <Card.Img className="rounded-circle" src="https://inmedical.sdemo.site/wp-content/uploads/2017/02/item-infor-1-style-5-1.jpg" />
                                     </Col>
-                                    <Col xs lg={9} md sm={9} className="align-items-center">
+                                    <Col xs={8} lg={9} md sm={9} className="align-items-center">
                                         <Card.Title className="text-start">Advanced diagnostic method</Card.Title>
                                         <Card.Text className="text-start text-muted">
                                             The ability to be able to look inside our bodies in superb clarity has had a major impact upon...
@@ -27,10 +27,10 @@ const Banner = () => {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col xs lg={3} md sm={3}>
+                                    <Col xs={4} lg={3} md sm={3}>
                                         <Card.Img className="rounded-circle" src="https://inmedical.sdemo.site/wp-content/uploads/2016/12/item-infor-3-style-5-1.jpg" />
                                     </Col>
-                                    <Col xs lg={9} md sm={9}>
+                                    <Col xs={8} lg={9} md sm={9}>
                                         <Card.Title className="text-start">Pediatric and family center</Card.Title>
                                         <Card.Text className="text-start text-muted">
                                             The average wait time to see a doctor at our hospital as provided by patient reviews is 5 minutes.
