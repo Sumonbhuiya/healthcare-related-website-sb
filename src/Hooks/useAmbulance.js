@@ -5,7 +5,7 @@ const useAmbulance = () => {
 
     useEffect(() => {
         // load data for ambulance
-        fetch(`https://sumonbhuiya.github.io/json-all-data/ambulance.json`)
+        fetch(`https://sumonbhuiya.github.io/json-data/ambulance.json`)
             .then(res => res.json())
             .then(data => setAmbulance(data));
     }, []);

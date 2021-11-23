@@ -5,7 +5,7 @@ const useData = () => {
 
     useEffect(() => {
         // load data for services
-        fetch(`https://sumonbhuiya.github.io/json-all-data/doctors.JSON`)
+        fetch(`https://sumonbhuiya.github.io/json-data/doctors.JSON`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);
