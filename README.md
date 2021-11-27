@@ -17,13 +17,13 @@ In this project I used:
 2. Users can be booked a doctor appointment and see doctor’s details.
 3. Users also can be seeing ambulance details for taking service
 
-## About Project
+## About Project Details
 
-If you visit this [Project](https://helthcare-related-website.web.app/), you can see some pages link with each others.\
+> If you visit this [Project](https://helthcare-related-website.web.app/), you can see some pages link with each others.\
 Where I use React Router to connect each other.
 
-There also have some private route. which is not open until login.\
+> There also have some private route. which is not open until login.\
 For login process there uses Firebase. You can login with using google or your personal email.
 
-Here I also try to do this site responsive by using bootstrap.\
+> Here I also try to do this site responsive by using bootstrap.\
 Also uses hook for use same data in different components.
