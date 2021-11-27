@@ -11,9 +11,13 @@ In this project I used:
 3. Firebase
 4. Bootstrap etc...
 
-## About Project
+## Features
 
-Details on this project:
+1. This is a clinic service type project, where give all information.
+2. Users can be booked a doctor appointment and see doctor’s details.
+3. Users also can be seeing ambulance details for taking service
+
+## About Project
 
 If you visit this [Project](https://helthcare-related-website.web.app/), you can see some pages link with each others.\
 Where I use React Router to connect each other.
